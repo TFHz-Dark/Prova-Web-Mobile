@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#1B2A41 ;
+    margin-top: 100px;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+body ul{
+    border-style: solid;
+    border-color: #C1CFDA;
+    background-color: #324a5f;
+    text-decoration: none;
+
+}
+.lista_mais_vendidos{
+    vertical-align: middle;
+    display: inline-block;
+}
+body h1 img{
+    width: 50%;
+}

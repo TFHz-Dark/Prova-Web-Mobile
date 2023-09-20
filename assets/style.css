@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+
+:root{
+    --background:#1B2A41;
+    --box_background: #324a5f;
+    --subMenu: #C1CFDA;
+}
+
+body{
+    background-color: var(--background);
+}
+#box{
+    background-color: var(--box_background);
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.box_destaque{
+
+    width: 55%;
+    margin: 30px auto;
+    background-color: var(--box_background);
+}
+
+.destaque{
+    float: left;
+    padding: 30px;
+    width: 40%;
+}
+
+h1{
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#titulo{
+    color: white;
+    padding-bottom: 50px;
+}
+
+#descricao{
+    color: white;
+    width: 100% ;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    width: 20%;
+    margin: 0 10px;
+    display: inline-block;
+    position: relative;
+}
+
+ul >li a {
+    display: block;
+    padding: 20px 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul >li p {
+    display: block;
+    padding: 20px 25px;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 3px solid black;
+    color: black;
+    font-weight: bold;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown li a{
+    color: black;
+}
+
+ul li ul.dropdown{
+    background-color: var(--subMenu);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ ul li:hover ul.dropdown{
+    display: block;
+}
+
+textarea{
+    resize: none;
+}
+textarea:focus{
+    outline: 0;
+}
+
+.imagens{
+    margin: 0 auto;
+    display: block;
+}
+
+.box_oferta{
+    background-color: var(--box_background);
+    width: 55%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.gridjogos{
+    width: 30%;
+    margin: 20px 10px;
+    display: inline-block;
+    background-color: var(--subMenu);
+}
+
+.gridjogos a{
+    text-decoration: none;
+    color: black;
+}
+
+.imagens_jogos{
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    border: 5px solid white;
+}
+
+.box_categorias{
+    width: 55%;
+    margin: 30px auto;
+    background-color: var(--box_background);
+}
+
+.slider{
+    margin: 0 auto;
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 400px;
+}
+
+.manual_navigation, .navigation_auto{
+    position:absolute;
+    width: 800px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    margin-left: -80px;
+}
+
+.navigation_auto{
+    margin-top: 370px;
+}
+
+.manual_btn, .navigation_auto div{
+    border: 3px solid aqua;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation_auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual_btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual_btn:hover{
+    background-color: white;
+}
+
+#radio_1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio_2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio_3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio_4:checked ~ .first{
+    margin-left: -75%;
+}
+
+#radio_5:checked ~ .first{
+    margin-left: -100%;
+}
+
+#radio_6:checked ~ .first{
+    margin-left: -125%;
+}
+
+#radio_7:checked ~ .first{
+    margin-left: -150%;
+}
+
+#radio_8:checked ~ .first{
+    margin-left: -175%;
+}
+
+#radio_9:checked ~ .first{
+    margin-left: -200%;
+}
+
+#radio_10:checked ~ .first{
+    margin-left: -225%;
+}
+
+
+#radio_1:checked ~ .navigation_auto .auto_btn_01{
+    background-color: white;
+}
+
+#radio_2:checked ~ .navigation_auto .auto_btn_02{
+    background-color: white;
+}
+
+#radio_3:checked ~ .navigation_auto .auto_btn_03{
+    background-color: white;
+}
+
+#radio_4:checked ~ .navigation_auto .auto_btn_04{
+    background-color: white;
+}
+
+#radio_5:checked ~ .navigation_auto .auto_btn_05{
+    background-color: white;
+}
+
+#radio_6:checked ~ .navigation_auto .auto_btn_06{
+    background-color: white;
+}
+
+#radio_7:checked ~ .navigation_auto .auto_btn_07{
+    background-color: white;
+}
+
+#radio_8:checked ~ .navigation_auto .auto_btn_08{
+    background-color: white;
+}
+
+#radio_9:checked ~ .navigation_auto .auto_btn_09{
+    background-color: white;
+}
+
+#radio_10:checked ~ .navigation_auto .auto_btn_10{
+    background-color: white;
+}
+
